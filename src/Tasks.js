@@ -2,7 +2,6 @@ class Tasks {
     static tasks = [];
 
     constructor(id, description) {
-      // this.tasks=[];
       this.id = id;
       this.description = description;
       this.completed = false;
@@ -12,7 +11,7 @@ class Tasks {
       localStorage.setItem('tasks', JSON.stringify(tasks));
     }
 
-    static itemsCount =() => this.tasks.length
+    static itemsCount =() => this.tasks.length;
 
     static updateItems =(id, newvalue) => {
       this.tasks.forEach((taskk) => {
